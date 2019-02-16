@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="container">
+	<div class="col-md-5">
+		<fieldset>
+			<form action="/" method="post"  #myForm="ngForm"  (submit)="whethers(); myForm.reset()" >
+				<input name="city" type="text" class="ghost-input" placeholder="Enter a City" required [(ngModel)]="city" ng-click="resetForm()">
+				<input type="submit" class="ghost-button" value="Get Weather">
+			</form>
+
+		</fieldset>
+	</div><br>
+	<!-- <button (click)="whether()">Get Weather</button> -->
+	<div class="col-md-6">
+		<h2>Weather</h2>          
+		<table class="table" style="background-color: #c3a3a3;">
+			<thead>
+				<tr>
+					<th> <i class="fas fa-city"></i> City</th>
+					<th><i class="fas fa-thermometer-full"></i> Tempreture</th>
+				</tr>
+			</thead>
+			<tbody *ngFor="let i of detail">
+				<tr>
+					<td>{{i.city}}</td>
+					<td>{{i.temp}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</div>
