@@ -10,12 +10,7 @@ import { UserComponent } from './user/user.component';
 import { WhetherComponent } from './whether/whether.component';
 import { HeaderComponent } from './header/header.component';
 import { CityComponent } from './city/city.component';
-
-
-
-
-
-
+import { NotifierModule } from 'angular-notifier';
 
 @NgModule({
   declarations: [
@@ -25,15 +20,14 @@ import { CityComponent } from './city/city.component';
   UserComponent,
   WhetherComponent,
   HeaderComponent,
-  CityComponent,
- 
-
+  CityComponent
   ],
   imports: [
   BrowserModule,
   AppRoutingModule,
   HttpClientModule,
   FormsModule,
+  NotifierModule
   ],
   providers: [],
   bootstrap: [AppComponent]

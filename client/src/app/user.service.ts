@@ -29,6 +29,8 @@ export class UserService {
 		console.log("data--=-",data);
 		return this.http.post("http://localhost:3000/city/get-weathers",data);
 	}
+
+	
 }
 
 

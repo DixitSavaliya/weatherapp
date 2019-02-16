@@ -9,7 +9,9 @@
 
 		</fieldset>
 	</div><br> -->
-	<!-- <button (click)="whether()">Get Weather</button> -->
+	<!-- <button class="button button--primary" (click)="">
+		Default me!
+	</button> -->
 	<div class="col-md-6">
 		<h2>Weather</h2>          
 		<table class="table" style="background-color: #c3a3a3;">
@@ -22,13 +24,11 @@
 			<tbody *ngFor="let i of detail">
 				<tr>
 					<td>{{i.city}}</td>
-					<td>{{i.temp}}</td>
+					<td>{{i.temp}}℃</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 
-	<!-- <button class="button button-primary" (click)="subscribeToNotifications()">
-		Subscribe
-	</button> -->
+	
 </div>
